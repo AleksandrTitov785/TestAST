@@ -17,7 +17,7 @@ on:
 jobs:
   run-tests:
     run-on: ubuntu-latest
-    name: Tests
+    name: Test
     steps:
       - name: Copy source code
         uses: actions/checkout@v4
