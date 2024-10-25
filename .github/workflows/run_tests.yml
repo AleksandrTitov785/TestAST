@@ -20,12 +20,12 @@ jobs:
     name: Tests
     steps:
       -name: Copy source code
-       uses: actions/checkout@v4
-      -name: Set up Python env
-       uses: actions/setup-python@v5
-      witch:
+      uses: actions/checkout@v4
+    -name: Set up Python env
+    uses: actions/setup-python@v5
+    witch:
         python-version: "3.9" 
-      -name: install dependencies
-       run: pip install -r requirements.txt
-      -name: Run tests
-       run: pytest -v
+  -name: install dependencies
+  run: pip install -r requirements.txt
+-name: Run tests
+run: pytest -v
